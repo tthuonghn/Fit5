@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/myBarChart">
+
+    </com.github.mikephil.charting.charts.BarChart>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/method_image"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabata method Default"
+        android:textColor="@color/primary_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/method_name"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-minutes warm up."
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        android:id="@+id/method_warmup_time"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 seconds fast-walking."
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        android:id="@+id/method_normal_time"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 seconds rushing."
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        android:id="@+id/method_rush_time"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat for total 8 cycles."
+        android:textColor="@color/primary_text"
+        android:textSize="20dp"
+        android:id="@+id/method_repeat"
+        android:layout_marginLeft="30dp"/>
+
+</LinearLayout>

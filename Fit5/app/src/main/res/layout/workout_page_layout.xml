@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Info"-->
+        <!--android:textSize="8dp"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:visibility="invisible"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonChooseWorkoutType"
+            android:text="Type"
+            android:textSize="15dp"
+            android:textColor="@color/primary_text"
+            android:layout_weight="0.25"
+            android:drawableLeft="@drawable/config_workout_normal"
+            android:background="@color/backgroundColor"
+            android:paddingLeft="20dp"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonTargetCal"
+            android:text="Level"
+            android:textSize="15dp"
+            android:textColor="@color/primary_text"
+            android:layout_weight="0.25"
+            android:drawableLeft="@drawable/config_circuit_normal"
+            android:background="@color/backgroundColor"
+            android:paddingLeft="20dp"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonMusic"
+            android:text="Music"
+            android:textSize="15dp"
+            android:textColor="@color/primary_text"
+            android:layout_weight="0.25"
+            android:drawableLeft="@drawable/ic_music_box_outline_green_48dp"
+            android:background="@color/backgroundColor"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+        <com.techkids.thangduong.fit5.CommonView.CircularProgressBar
+            android:id="@+id/workout_page_cirProBar"
+            style="@style/Widget.ProgressBar.CircularProgressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cpb_progressColor="@color/colorPrimary"
+            app:cpb_backgroundColor="@color/colorPrimaryLight"
+            app:cpb_title="0.00 %"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            app:cpb_titleColor="@color/colorPrimaryDark"
+            app:cpb_subtitle="400 cal to go"
+            app:cpb_subtitleColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStartWorkout"
+        android:text="Start Workout"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_text"
+        android:layout_below="@+id/workout_page_cirProBar"/>
+
+
+</RelativeLayout>

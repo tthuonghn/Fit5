@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">-->
+
+
+    <!--<com.techkids.thangduong.fit5.MyViewPager-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/myViewPager"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--></com.techkids.thangduong.fit5.MyViewPager>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:id="@+id/linearLayout">-->
+
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/buttonGeneralInfo"-->
+            <!--android:text="Workout"-->
+            <!--android:textSize="8dp"-->
+            <!--android:layout_weight="0.25"/>-->
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/buttonInfoWorkoutType"-->
+            <!--android:text="Type"-->
+            <!--android:textSize="8dp"-->
+            <!--android:layout_weight="0.25"/>-->
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/buttonAchievements"-->
+            <!--android:text="Achievements"-->
+            <!--android:textSize="8dp"-->
+            <!--android:layout_weight="0.25"/>-->
+        <!--<Button-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/buttonTrack"-->
+            <!--android:text="Track"-->
+            <!--android:textSize="8dp"-->
+            <!--android:layout_weight="0.25"/>-->
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="?attr/colorPrimary"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways"-->
+                <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+                <!--/>-->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+                android:background="@color/backgroundColor"
+                app:tabTextColor="@color/textColorSecondary"
+                app:tabSelectedTextColor="@color/textColorPrimary"
+                />
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <com.techkids.thangduong.fit5.CommonView.MyViewPager
+    android:id="@+id/myViewPager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+    />
+</LinearLayout>
+
+
+
